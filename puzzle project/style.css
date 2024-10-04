@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('images/background.png'); /* 배경 이미지 경로 */
+    background-size: cover; /* 배경 이미지를 화면 크기에 맞게 조정 */
+    background-position: center; /* 배경 이미지를 중앙에 배치 */
+    background-attachment: fixed; /* 배경을 고정시켜 스크롤시에도 움직이지 않도록 설정 */
+    background-repeat: no-repeat; /* 배경이 반복되지 않도록 설정 */
+    background-color: #f4f4f4; /* 이미지가 로드되지 않을 경우 대체할 색상 */
+}
+
+/* 설명 섹션 스타일 */
+.intro-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 20px;
+    color: white; /* 배경과 대비되는 텍스트 색상 */
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열로 설정 */
+    grid-gap: 0; /* 칸 사이의 간격 없음 */
+    width: 300px; /* 전체 그리드 너비 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+}
+
+.grid-item {
+    width: 100px; /* 각 퍼즐 칸의 너비 */
+    height: 100px; /* 각 퍼즐 칸의 높이 */
+    background-size: cover; /* 이미지가 퍼즐 칸을 완전히 덮도록 설정 */
+    border: 1px solid #000; /* 검정색 테두리 */
+    cursor: pointer; /* 마우스 커서가 손 모양으로 변경 */
+}
+
+/* 각 퍼즐 칸에 대한 기본 흑백 이미지 설정 */
+#item1 {
+    background-image: url('images/piece1_bw.jpg');
+}
+#item2 {
+    background-image: url('images/piece2_bw.jpg');
+}
+#item3 {
+    background-image: url('images/piece3_bw.jpg');
+}
+#item4 {
+    background-image: url('images/piece4_bw.jpg');
+}
+#item5 {
+    background-image: url('images/piece5_bw.jpg');
+}
+#item6 {
+    background-image: url('images/piece6_bw.jpg');
+}
+#item7 {
+    background-image: url('images/piece7_bw.jpg');
+}
+#item8 {
+    background-image: url('images/piece8_bw.jpg');
+}
+#item9 {
+    background-image: url('images/piece9_bw.jpg');
+}
+
+/* 클릭 후 컬러 이미지 설정 */
+.grid-item.filled {
+    background-image: url('images/piece1_color.jpg'); /* 기본 컬러 이미지 (여기서는 첫 번째 이미지 사용) */
+}
